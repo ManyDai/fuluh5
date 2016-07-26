@@ -4,21 +4,39 @@
   width: 100%;
   box-sizing: border-box;
   padding: 0px 5%;
-  height: 10vh;
+  height: 60px;
   border-bottom: 1px solid #f0f0f0;
 }
 .header-wrap .fulu {
-  height: 6vh;
-  margin-top: 2vh;
+  height: 32px;
+  margin-top: 14px;
 }
 .header-wrap .total-nav {
-  height: 3vh;
-  margin-top: 3.5vh;
+  height: 20px;
+  margin-top: 20px;
 }
 html,
 body {
-  font-size: 4vw;
+  font-size: 16px;
   color: #73818a;
+}
+@media screen and (min-width: 380px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 325px) {
+  html,
+  body {
+    font-size: 14px;
+  }
 }
 .yellow {
   color: #ffbe40;
@@ -42,8 +60,7 @@ body {
   border-radius: 100%;
 }
 .slide-box {
-  height: 100vh;
-  padding-top: 10vh;
+  padding-top: 60px;
   box-sizing: border-box;
   background-color: #365778;
 }
@@ -56,7 +73,7 @@ body {
 .slide-nav-wrap {
   -webkit-transition: all 0.2s ease;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   left: 0%;
   top: 0;
@@ -71,8 +88,8 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 .slide-nav-wrap .slide-nav-inner .slide-nav-list li {
-  height: 10vh;
-  line-height: 10vh;
+  height: 60px;
+  line-height: 60px;
   padding: 0 15px;
   border-bottom: 1px dashed #738aa1;
   color: white;
@@ -85,7 +102,7 @@ body {
 }
 .slide-nav-wrap .slide-nav-inner .slide-nav-list li .more-content {
   height: 100%;
-  width: 10vh;
+  width: 60px;
   top: 0;
   right: 0;
   background: url('../img/more-arrow.png');
@@ -102,14 +119,15 @@ body {
   background-position: center;
 }
 .slide-nav-wrap .slide-nav-inner .slide-nav-list li.top-switch img {
-  height: 3vh;
-  margin-top: 3.5vh;
+  height: 20px;
+  margin-top: 20px;
 }
 .slide-nav-wrap .slide-nav-inner .slide-nav-list li .more-nav {
   width: 100%;
   background-color: #4d6986;
   left: 0;
   top: 100%;
+  z-index: 3;
 }
 .slide-nav-wrap .slide-nav-inner .info-company {
   width: 100%;
@@ -171,10 +189,11 @@ html {
 }
 .main .offer-item .offer-item-txt {
   font-size: 12px;
+  line-height: 20px;
 }
 .main .offer-item-yuan {
-  width: 35vw;
-  height: 35vw;
+  width: 8rem;
+  height: 8rem;
   margin: 0 auto 10px;
   border-radius: 100%;
   border: 2px solid #a1b1bc;
@@ -369,7 +388,7 @@ html {
 .footer-wrap .top {
   width: 18%;
   left: 41%;
-  top: -9.5vw;
+  top: -2rem;
   cursor: pointer;
   border-radius: 100%;
 }
@@ -558,8 +577,8 @@ html {
   -webkit-box-orient: vertical;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  width: 40vw;
-  height: 40vw;
+  width: 9rem;
+  height: 9rem;
   padding: 1rem;
   box-sizing: border-box;
   border-radius: 100%;
@@ -734,17 +753,17 @@ html {
 }
 .chang-logo-wrap {
   margin: 0 auto;
-  padding: 0 4vw;
+  padding: 0 1rem;
 }
 .chang-logo-wrap .left {
-  width: 28vw;
+  width: 30%;
   height: 27vw;
+  width: 27vw;
   border: 2px solid #365778;
   border-radius: 6px;
   color: white;
   background: #365778;
-  margin-right: 4vw;
-  margin-bottom: 4vw;
+  margin: 1.5%;
   box-sizing: border-box;
   text-align: center;
   font-size: 12px;
@@ -764,7 +783,7 @@ html {
   background: white;
 }
 .chang-logo-wrap .left img {
-  height: 45%;
+  height: 2.5rem;
   margin: 15px 0 0;
 }
 .it-wrap .it {
@@ -804,13 +823,13 @@ html {
   font-size: 0;
 }
 #shang3 .offer-item {
-  width: 30vw;
-  padding: 1.5vw;
+  width: 30%;
+  padding: 1.5%;
   box-sizing: content-box;
 }
 #shang3 .offer-item .offer-item-yuan {
-  width: 30vw;
-  height: 30vw;
+  width: 7rem;
+  height: 7rem;
   font-size: 12px;
   box-sizing: border-box;
 }
@@ -935,7 +954,7 @@ html {
   cursor: pointer;
 }
 .aboutus-top {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .aboutus-top .about-title-bigger {
   font-size: 20px;
@@ -958,18 +977,24 @@ html {
 .aboutus-content .txt-wrap {
   padding: 10px 0;
 }
-.logo-yuan {
+.yuan-wrap {
+  width: 100%;
+  text-align: center;
+  bottom: -41px;
+}
+.yuan-wrap .logo-yuan {
+  display: inline-block;
   background-image: url('../img/logo2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
   border-radius: 100%;
   border: 1px solid #f0f0f0;
-  width: 20vw;
-  height: 20vw;
-  bottom: -10vw;
-  right: 40vw;
+  width: 75px;
+  height: 75px;
+  margin: 0px auto;
   background-color: white;
+  position: relative;
 }
 .pic-wrap img {
   width: 40%;
