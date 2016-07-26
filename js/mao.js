@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
     $('#slide-img').on('touchstart',function()
     {
        $('html,body').animate({
-        scrollTop: $(window).height()*0.9},
+        scrollTop: $(window).height()-60},
         'slow', function() {
         /* stuff to do after animation is complete */
        });
