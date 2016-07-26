@@ -1,5 +1,6 @@
 
 jQuery(document).ready(function($) {
+  $('.slide-box').height($(window).height()-60);
   
     // document.oncontextmenu=function(){window.event.returnValue=false;};
   for(i in document.images)document.images[i].ondragstart=function(){return false;}; 
@@ -33,13 +34,18 @@ jQuery(document).ready(function($) {
 
    
     // 侧滑
-    $('.touch-switch').on('touchstart',function()
+    $('.touch-switch,.slide-nav-wrap').on('touchstart',function()
     {
       $('.slide-nav-wrap').toggleClass('none');
     })
+
+    $('.slide-nav-inner ').on('touchstart',function(event)
+    {
+      event.stopPropagation();
+    })
     // 二级菜单
     var flag=false;
-    $('#more-content').on('touchstart',function()
+    $('#method').on('touchstart',function()
     {
       if(!flag)
       {
