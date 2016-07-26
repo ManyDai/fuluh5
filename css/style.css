@@ -60,6 +60,7 @@ body {
   border-radius: 100%;
 }
 .slide-box {
+  height: 100vh;
   padding-top: 60px;
   box-sizing: border-box;
   background-color: #365778;
