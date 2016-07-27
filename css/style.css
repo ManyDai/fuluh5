@@ -577,11 +577,6 @@ html {
   -webkit-box-pack: center;
 }
 .method-game-p2-best {
-  display: box;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
   width: 9rem;
   height: 9rem;
   padding: 1rem;
@@ -592,6 +587,15 @@ html {
   text-align: center;
   font-size: 0.7rem;
   line-height: 21px;
+}
+.method-game-p2-best .bi {
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  height: 100%;
+  width: 100%;
 }
 .method-game-p2-best img {
   width: 30%;
