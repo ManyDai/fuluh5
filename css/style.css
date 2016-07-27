@@ -91,6 +91,8 @@ body {
 .slide-nav-wrap .slide-nav-inner .slide-nav-list li {
   height: 60px;
   line-height: 60px;
+  height: 10vh;
+  line-height: 10vh;
   padding: 0 15px;
   border-bottom: 1px dashed #738aa1;
   color: white;
@@ -122,6 +124,8 @@ body {
 .slide-nav-wrap .slide-nav-inner .slide-nav-list li.top-switch img {
   height: 20px;
   margin-top: 20px;
+  height: 3vh;
+  margin-top: 3.5vh;
 }
 .slide-nav-wrap .slide-nav-inner .slide-nav-list li .more-nav {
   width: 100%;
@@ -372,8 +376,8 @@ html {
   margin: 1.5%;
 }
 .xia {
-  width: 8%;
-  left: 46%;
+  width: 6%;
+  left: 47%;
   bottom: 20px;
 }
 .footer-wrap {
