@@ -569,13 +569,6 @@ html {
 .liuliang-item img {
   width: 100%;
 }
-.method-game-p2-best-wrap {
-  display: box;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-}
 .method-game-p2-best {
   width: 9rem;
   height: 9rem;
