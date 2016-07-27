@@ -246,11 +246,13 @@ html {
 .index-method li .check-detail {
   text-decoration: underline;
   color: #87939b;
-  font-size: 1rem;
-  padding-left: 1.5rem;
+  font-size: 16px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 22px;
   background-image: url('../img/search2.png');
   background-position: left center;
-  background-size: 1.3rem;
+  background-size: 18px;
   background-repeat: no-repeat;
   display: inline-block;
 }
